@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-tr$
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>{{ title }}</title>
+        <script src="{{ url_for('static', filename='node_modules/chart.js/dist/Chart.js')}}"></script>
+        <script type="text/javascript" src="static/code.js"></script>
+  </head>
+  <body>
+        <h1>Leon's Sweet Sewer Pressure Monitor</h1>
+        <p>
+          Start Date:
+          <input id="fromDate" style="display: inline;" type="text" placeholder="YYYY-MM-DD HH:MM:SS" />
+          End Date:
+          <input id="toDate" style="display: inline;" type="text" placeholder="YYYY-MM-DD HH:MM:SS" />
+          <input style="display: inline;" type="submit" value="Go" onclick="handleClick()"/>
+        </p>
+        <div style="height: 600px">
+          <canvas id="myChart"></canvas>
+        </div>
+  </body>
+</html>
+
